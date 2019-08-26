@@ -1,0 +1,3 @@
+/home/zhangqi/sps-stereo/build/CMakeFiles/edit_cache.dir
+/home/zhangqi/sps-stereo/build/CMakeFiles/rebuild_cache.dir
+/home/zhangqi/sps-stereo/build/CMakeFiles/spsstereo.dir

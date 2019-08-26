@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+   <FileVersion major="1" minor="6" />
+   <Project>
+      <Option title="spsstereo" />
+      <Option makefile_is_custom="1" />
+      <Option compiler="gcc" />
+      <Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\opencv\;CMake Files\..\opencv\opencv-3.4.6\;CMake Files\..\opencv\opencv-3.4.6\new_build\;" />
+      <Build>
+      <Target title="all">
+         <Option working_dir="/home/zhangqi/sps-stereo" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 all" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="edit_cache">
+         <Option working_dir="/home/zhangqi/sps-stereo" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 edit_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="rebuild_cache">
+         <Option working_dir="/home/zhangqi/sps-stereo" />
+         <Option type="4" />
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 rebuild_cache" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="spsstereo">
+         <Option output="/home/zhangqi/sps-stereo/spsstereo" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/include/opencv" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/calib3d/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/core/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudaarithm/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudabgsegm/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudacodec/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudafeatures2d/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudafilters/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudaimgproc/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudalegacy/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudaobjdetect/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudaoptflow/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudastereo/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudawarping/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudev/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/dnn/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/features2d/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/flann/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/highgui/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/imgcodecs/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/imgproc/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/ml/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/objdetect/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/photo/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/shape/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/stitching/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/superres/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/ts/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/video/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/videoio/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/videostab/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/world/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/new_build" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/aruco/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/bgsegm/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/bioinspired/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/ccalib/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/datasets/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/dnn_objdetect/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/dpm/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/face/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/freetype/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/fuzzy/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/hdf/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/hfs/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/img_hash/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/line_descriptor/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/optflow/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/phase_unwrapping/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/plot/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/reg/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/rgbd/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/saliency/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/stereo/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/structured_light/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/surface_matching/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/text/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/tracking/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/xfeatures2d/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/ximgproc/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/xobjdetect/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/xphoto/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 spsstereo" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="spsstereo/fast">
+         <Option output="/home/zhangqi/sps-stereo/spsstereo" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/include/opencv" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/calib3d/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/core/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudaarithm/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudabgsegm/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudacodec/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudafeatures2d/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudafilters/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudaimgproc/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudalegacy/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudaobjdetect/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudaoptflow/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudastereo/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudawarping/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/cudev/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/dnn/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/features2d/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/flann/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/highgui/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/imgcodecs/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/imgproc/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/ml/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/objdetect/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/photo/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/shape/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/stitching/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/superres/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/ts/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/video/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/videoio/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/videostab/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/modules/world/include" />
+            <Add directory="/home/cyz/opencv/opencv-3.4.6/new_build" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/aruco/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/bgsegm/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/bioinspired/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/ccalib/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/datasets/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/dnn_objdetect/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/dpm/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/face/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/freetype/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/fuzzy/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/hdf/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/hfs/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/img_hash/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/line_descriptor/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/optflow/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/phase_unwrapping/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/plot/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/reg/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/rgbd/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/saliency/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/stereo/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/structured_light/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/surface_matching/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/text/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/tracking/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/xfeatures2d/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/ximgproc/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/xobjdetect/include" />
+            <Add directory="/home/cyz/opencv/opencv_contrib-3.4.6/modules/xphoto/include" />
+            <Add directory="/usr/include" />
+            <Add directory="/usr/include/c++/5" />
+            <Add directory="/usr/include/c++/5/backward" />
+            <Add directory="/usr/include/x86_64-linux-gnu" />
+            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
+            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+            <Add directory="/usr/local/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 spsstereo/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/zhangqi/sps-stereo/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      </Build>
+      <Unit filename="/home/zhangqi/sps-stereo/SGMStereo.cpp">
+         <Option target="spsstereo"/>
+      </Unit>
+      <Unit filename="/home/zhangqi/sps-stereo/SGMStereo.h">
+         <Option target="spsstereo"/>
+      </Unit>
+      <Unit filename="/home/zhangqi/sps-stereo/SPSStereo.cpp">
+         <Option target="spsstereo"/>
+      </Unit>
+      <Unit filename="/home/zhangqi/sps-stereo/SPSStereo.h">
+         <Option target="spsstereo"/>
+      </Unit>
+      <Unit filename="/home/zhangqi/sps-stereo/spsstereo_main.cpp">
+         <Option target="spsstereo"/>
+      </Unit>
+      <Unit filename="/home/zhangqi/sps-stereo/CMakeLists.txt">
+          <Option virtualFolder="CMake Files\" />
+      </Unit>
+      <Unit filename="/home/zhangqi/sps-stereo/../opencv/opencv-3.4.6/new_build/OpenCVConfig-version.cmake">
+          <Option virtualFolder="CMake Files\..\opencv\opencv-3.4.6\new_build\" />
+      </Unit>
+      <Unit filename="/home/zhangqi/sps-stereo/../opencv/opencv-3.4.6/new_build/OpenCVConfig.cmake">
+          <Option virtualFolder="CMake Files\..\opencv\opencv-3.4.6\new_build\" />
+      </Unit>
+      <Unit filename="/home/zhangqi/sps-stereo/../opencv/opencv-3.4.6/new_build/OpenCVModules.cmake">
+          <Option virtualFolder="CMake Files\..\opencv\opencv-3.4.6\new_build\" />
+      </Unit>
+   </Project>
+</CodeBlocks_project_file>

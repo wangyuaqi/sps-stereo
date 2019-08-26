@@ -3,12 +3,13 @@ cmake_minimum_required(VERSION 2.4)
 project(spsstereo)
 
 ## Flags
-#set(CMAKE_CXX_FLAGS_RELEASE "-Wall -O3 -msse4.2")
+set(CMAKE_CXX_FLAGS_RELEASE "-Wall -O3 -msse4.2")
 #if (APPLE)
 #set(CMAKE_CXX_FLAGS_RELEASE "-Wall -O3 -msse4.2 -stdlib=libstdc++")
 #endif (APPLE)
-#set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_BUILD_TYPE Release)
 
+SET(OpenCV_DIR /home/zhangqi/opencv/opencv-3.4.6/new_build/)
 find_package(OpenCV REQUIRED)
 
 

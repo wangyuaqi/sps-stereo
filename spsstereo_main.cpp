@@ -23,7 +23,7 @@
 
 #include "SPSStereo.h"
 #include "defParameter.h"
-
+using namespace std;
 
 void makeSegmentBoundaryImage(const cv::Mat & inputImage,
 							  const /*png::image<png::gray_pixel_16>*/ cv::Mat & segmentImage,
@@ -34,19 +34,20 @@ void writeBoundaryLabelFile(const std::vector< std::vector<int> >& boundaryLabel
 
 
 int main(int argc, char* argv[]) {
-	if (argc < 2) {
-		std::cerr << "usage: sgmstereo left right" << std::endl;
-		exit(1);
-	}
-    
-    std::string leftImageFilename;
-    std::string rightImageFilename;
+    if (argc < 2) {
+	std::cerr << "usage: sgmstereo left right" << std::endl;
+	exit(1);
+    }
+    clock_t start,end;
+    start = clock();
+    std::string leftImageFilename = argv[1];
+    std::string rightImageFilename = argv[2];
 
-    std::ifstream images(argv[1]);
+//  std::ifstream images(argv[1]);
     
-    std::getline(images, leftImageFilename);
-    std::getline(images, rightImageFilename);
-    while (!images.eof())
+//  std::getline(images, leftImageFilename);
+// std::getline(images, rightImageFilename);
+//  while (!images.eof())
     {
         std::cout << "Procesing : " << leftImageFilename << std::endl;
         cv::Mat leftImage = cv::imread(leftImageFilename, CV_LOAD_IMAGE_COLOR);
@@ -63,7 +64,8 @@ int main(int argc, char* argv[]) {
         std::vector< std::vector<double> > disparityPlaneParameters;
         std::vector< std::vector<int> > boundaryLabels;
         sps.compute(superpixelTotal, leftImage, rightImage, segmentImage, disparityImage, disparityPlaneParameters, boundaryLabels);
-
+        end = clock();
+        cout << "time : " << (double)(end - start) / CLOCKS_PER_SEC * 1000 << "ms" << endl;
         cv::Mat segmentBoundaryImage;
         makeSegmentBoundaryImage(leftImage, segmentImage, boundaryLabels, segmentBoundaryImage);
 
@@ -72,19 +74,19 @@ int main(int argc, char* argv[]) {
         if (slashPosition != std::string::npos) outputBaseFilename.erase(0, slashPosition + 1);
         size_t dotPosition = outputBaseFilename.rfind('.');
         if (dotPosition != std::string::npos) outputBaseFilename.erase(dotPosition);
-        std::string outputDisparityImageFilename = outputBaseFilename + "_left_disparity.png";
-        std::string outputSegmentImageFilename = outputBaseFilename + "_segment.png";
-        std::string outputBoundaryImageFilename = outputBaseFilename + "_boundary.png";
-        std::string outputDisparityPlaneFilename = outputBaseFilename + "_plane.txt";
-        std::string outputBoundaryLabelFilename = outputBaseFilename + "_label.txt";
+        std::string outputDisparityImageFilename = "result_disparity/" + outputBaseFilename + "_left_disparity.png";
+        std::string outputSegmentImageFilename = "result_segment/" + outputBaseFilename + "_segment.png";
+        std::string outputBoundaryImageFilename = "result_bound/" + outputBaseFilename + "_boundary.png";
+        std::string outputDisparityPlaneFilename = "result_plane/" + outputBaseFilename + "_plane.txt";
+        std::string outputBoundaryLabelFilename = "result_label/" + outputBaseFilename + "_label.txt";
 
         cv::imwrite(outputDisparityImageFilename, disparityImage);
         cv::imwrite(outputSegmentImageFilename, segmentImage);
         cv::imwrite(outputBoundaryImageFilename, segmentBoundaryImage);
         writeDisparityPlaneFile(disparityPlaneParameters, outputDisparityPlaneFilename);
         writeBoundaryLabelFile(boundaryLabels, outputBoundaryLabelFilename);
-        std::getline(images, leftImageFilename);
-        std::getline(images, rightImageFilename);
+//      std::getline(images, leftImageFilename);
+//      std::getline(images, rightImageFilename);
     }
     return 0;
 }
